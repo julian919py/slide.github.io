@@ -1,0 +1,59 @@
+body{
+    background: honeydew;
+}
+#envoltura{
+    width: 300px;
+    height: 300px;
+    perspective: 700px;
+    margin: 100px auto;
+}
+.cubo{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transform: rotateY(35deg) rotateX(-38deg);
+    transition: 300ms ease-in;
+}
+.cubo:hover{
+    transform: rotateY(12deg) rotateX(155deg);
+}
+.cubo div{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: gray;
+}
+
+.cubo div:nth-child(1){
+    transform: translateZ(75px);
+    background-color: blue;
+}
+
+.cubo div:nth-child(2){
+    transform: rotateX(180deg) translateZ(75px);
+    background: red;
+}
+
+.cubo div:nth-child(3){
+    transform: rotateY(-90deg) translateZ(75px);
+    background: yellow;
+}
+
+.cubo div:nth-child(4){
+    transform: rotateY(90deg) translateZ(75px);
+    background: green;
+}
+
+.cubo div:nth-child(5){
+    transform: rotateX(90deg) translateZ(75px);
+    background: black;
+}
+
+.cubo div:nth-child(6){
+    transform: rotateX(-90deg) translateZ(75px);
+    background: gray;
+}
+
+
+

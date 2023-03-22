@@ -1,0 +1,14 @@
+div{
+    text-align: center;
+    background: red;
+}
+h1{
+    color: var(--titulo-color);
+}
+h2{
+    color: var(--titulo-color);
+}
+
+:root{
+    --titulo-color: gold;
+}

@@ -1,0 +1,25 @@
+#animacion{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    background-color: red;
+    animation-name: animar;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animar {
+    0%{
+        transform: scale(.3);
+        border-radius: 50%;
+    }
+    50%{
+        background-color: orange;
+    }
+    100%{
+        transform: scale(1.5);
+        background-color: coral;
+    }
+}

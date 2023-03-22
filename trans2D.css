@@ -1,0 +1,26 @@
+/*
+div{
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(orange,red);
+    border: 7px solid darkred;
+    /*transform: translateY(200px); /*Traslacion
+}
+*/
+div{
+    background: linear-gradient(180deg, red, orange);
+    width: 200px;
+    height: 200px;
+    animation: skew 1s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+}
+
+@keyframes skew {
+    0%{
+        transform: skew(20deg, 20deg);
+    }
+    100%{
+        transform: skew(-20deg, -20deg);
+    }
+}

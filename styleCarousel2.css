@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, white 0%, rgb(255, 214, 214) 110%);
+}
+
+.carrousel{
+    position: absolute;
+    width: 75%;
+    height: 80%;
+    padding: 1% 0;
+    min-width: 75vw;
+    min-height: 80vh;
+    background-color: white;
+    box-shadow: 0px 5px 5px 5px rgb(0, 0, 0,0.25);
+    overflow: hidden;
+    left: 12.5%;
+    top: 10%;  
+}
+.carrousel .grande{
+    width: 167%;
+    height: 70%;
+    display: flex;
+    position: absolute;
+    top: 10%;
+}
+.carrousel .grande .contentImg{
+    width: calc(100%/5);
+    margin: 0 1%;
+    
+}
+.carrousel .puntos{
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 8%;
+}
+.carrousel .punto{
+    width: 2em;
+    height: 2em;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px 1px rgb(0, 0, 0,0.25);
+    transition: all .1s linear;
+}
+.carrousel .punto:active{
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+}
+.carrousel .punto:hover{
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0,0.25);
+}
+.contentImg.img1{
+    background: url(img/f7.jfif) no-repeat center;
+    background-size: cover;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.contentImg.img2{
+    background: url(img/f6.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.contentImg.img3{
+    background: url(img/f8.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.contentImg.img4{
+    background: url(img/f9.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.contentImg.img5{
+    background: url(img/f10.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.contentImg{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+    border-radius: 5%;
+    box-shadow: 0px 0px 2px 5px rgb(255, 214, 214, 0.25);
+    
+}
+.textImg{
+    transition: .5s ease;
+    opacity: 1;
+    background-color: #fafafa10;
+    backdrop-filter: blur(0.4rem);
+    border-radius: 5%;
+    color: black;
+    font-size: 38px;
+    width: 90%;
+    height: 0%;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+    
+}
+.contentImg.act:hover .textImg{
+    height: 90%;
+    line-height: 90%;
+    display: flex;
+    align-items: center;
+}
+.contentImg.izq{
+    transform: perspective(1000px) rotateY(-30deg) scaleY(0.92);
+}
+.contentImg.der{
+    transform: perspective(1000px) rotateY(30deg) scaleY(0.92);
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+@media screen and (max-width: 480px) {
+    .contentImg.act:hover .textImg{
+        height: 90%;
+        line-height: 90%;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .contentImg.izq{
+        transform: perspective(1000px) rotateY(-70deg) scaleY(0.92);
+    }
+    .contentImg.der{
+        transform: perspective(1000px) rotateY(70deg) scaleY(0.92);
+    }
+    .grande .contentImg.act{
+        width: 40%;
+    }
+    .grande .contentImg.izq, .grande .contentImg.der{
+        width: 10%;
+    }
+}

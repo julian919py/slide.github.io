@@ -1,0 +1,40 @@
+/*
+div{
+    width: 150px;
+    height: 150px;
+    background: cyan;
+    transition: all 1s;
+}
+
+#transicion{
+    transition-timing-function: linear;
+}
+
+div:hover{
+    width: 450px;
+    right: 400px;
+}
+*/
+/**/
+#transicion{
+    background: orange;
+    width: 50px;
+    height: 150px;
+    animation: mover-der 2s infinite;
+    animation-delay: 1000ms;
+}
+
+@keyframes mover-der{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(300px);
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: linear-gradient(120deg, orange 0%, red 100%);
+    }
+}
+
+

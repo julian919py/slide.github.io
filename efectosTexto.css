@@ -1,0 +1,30 @@
+/*p{
+    width: 400px;
+    font-size: 40px;
+    border: 3px solid red;
+}
+#texto{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+*/
+
+body{
+    background-color: bisque;
+}
+
+#texto{
+    width: 200px;
+    border: 2px solid brown;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    margin: 0;
+    background-color: white;
+    resize: horizontal; /*Controla el ancho del texto */
+}
+
+
+

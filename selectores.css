@@ -1,0 +1,22 @@
+/*
+    p span{
+    color: blue;
+    background: black;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+*/
+
+/*
+h1 + h2{
+    color: gray;
+}
+*/
+
+h1 ~ div{
+    background-color: orange;
+}

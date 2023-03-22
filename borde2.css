@@ -1,0 +1,15 @@
+#b{
+    border: 20px solid salmon;
+    width:  250px;
+    height: 250px;
+    font-size: 22px;
+    padding: 20px;
+    border-image: url(marco.png) 100 stretch;
+
+    /*
+    border-image-slice: 25%;
+    border-image-repeat: repeat round;
+    border-image-width: 30px;
+    border-image-outset: 10px;
+    */
+}
